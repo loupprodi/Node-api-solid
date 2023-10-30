@@ -1,7 +1,21 @@
 # App
 
-
 GymPass style app.
+
+# comandos:
+Obs: tsup faz a conversão do arquivo ts em js, pois o node nao executa codigos nativamente em typescript
+> npm i typescript @types/node tsx tsup -D
+
+Cria o tsconfig: onde target foi atualizado para o ECMAScript 2020
+> npx tsc --init
+
+bibliteca responsavel pelo Ambiente.
+> npm i dotenv
+
+biblioteca para validação de schemas e dados
+> npm i zod
+site: -[zod documentation](https://zod.dev/)
+
 
 ## RFs (Requisitos funcionais)
 
@@ -31,3 +45,15 @@ GymPass style app.
 - [ ] Os dados da aplicação precisam estar persistido em um banco PostgreSQL;
 - [ ] Todas as listas de dados precisam estar paginadas com 20 itens por paginas;
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+
+## Tecnologias utilizada
+
+### front-end
+
+### Back-end
+
+-Biblioteca  NodeJs
+
+### Desenvolvido por
+
+Luiz Prosdoskimi
