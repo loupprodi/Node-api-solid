@@ -16,6 +16,14 @@ biblioteca para validação de schemas e dados
 > npm i zod
 site: -[zod documentation](https://zod.dev/)
 
+biblioteca prisma depdencia de desenvolvimento
+> npm i prisma -D
+
+short handle para executar o prisma
+> npx prisma
+
+inicializando o prisma
+> npx prisma init
 
 ## RFs (Requisitos funcionais)
 
