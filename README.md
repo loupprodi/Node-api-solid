@@ -25,6 +25,21 @@ short handle para executar o prisma
 inicializando o prisma
 > npx prisma init
 
+gerar a tipagem do typescript criando a model
+> npx prisma generate
+
+dependencia de produção para acessar o banco de dados, prisma cliente
+> npm i @prisma/client
+
+gera o controle de versão do prisma, roda as migrations
+> npx prisma migrate dev
+
+comando para rodar o studio prisma
+> npx prisma studio
+
+comando para criar a imagem do docker sem precisar do docker-yml
+> docker run --name api-solid-pg -e POSTGRESQL_USERNAME=root -e POSTGRESQL_PASSWORD=root1234 -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+
 ## RFs (Requisitos funcionais)
 
 - [ ] Deve ser possível se cadastrar;
