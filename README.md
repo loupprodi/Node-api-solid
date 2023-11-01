@@ -34,6 +34,9 @@ dependencia de produção para acessar o banco de dados, prisma cliente
 gera o controle de versão do prisma, roda as migrations
 > npx prisma migrate dev
 
+gera o controle de versão do prisma, roda as migrations produção
+> npx prisma migrate deploy
+
 comando para rodar o studio prisma
 > npx prisma studio
 
