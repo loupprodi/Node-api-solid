@@ -37,8 +37,9 @@ gera o controle de versão do prisma, roda as migrations
 comando para rodar o studio prisma
 > npx prisma studio
 
-comando para criar a imagem do docker sem precisar do docker-yml
-> docker run --name api-solid-pg -e POSTGRESQL_USERNAME=root -e POSTGRESQL_PASSWORD=root1234 -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+```sh
+ docker run --name api-solid-pg -e POSTGRESQL_USERNAME=root -e POSTGRESQL_PASSWORD=root1234 -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+ ```
 
 ## RFs (Requisitos funcionais)
 
