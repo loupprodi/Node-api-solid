@@ -43,6 +43,11 @@ comando para rodar o studio prisma
 ```sh
  docker run --name api-solid-pg -e POSTGRESQL_USERNAME=root -e POSTGRESQL_PASSWORD=root1234 -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
  ```
+ instalar biblioteca responsal pela criptação da senha
+> npm i bcryptjs
+
+typescript da biblioteca 
+> npm i -D @types/bcryptjs
 
 ## RFs (Requisitos funcionais)
 
