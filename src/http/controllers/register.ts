@@ -1,8 +1,6 @@
 
 import { FastifyReply, FastifyRequest} from 'fastify'
-import {hash} from "bcryptjs"
 import {z } from 'zod'
-import { prisma } from '@/lib/prisma'
 import { registerUseCase } from '@/use-cases/register'
 
 export async function register(req : FastifyRequest, reply : FastifyReply) {
@@ -18,6 +16,5 @@ export async function register(req : FastifyRequest, reply : FastifyReply) {
    } catch (error) {
     return reply.status(409).send()
    }
-
     return reply.status(201).send()
 }
