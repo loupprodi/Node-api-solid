@@ -49,6 +49,10 @@ comando para rodar o studio prisma
 typescript da biblioteca 
 > npm i -D @types/bcryptjs
 
+### Testes
+biblioteca de testes junto com a biblioteca para entender os paths criado no tsconfig
+> npm i vitest vite-tsconfig-paths -D
+
 ## RFs (Requisitos funcionais)
 
 - [ ] Deve ser possível se cadastrar;
