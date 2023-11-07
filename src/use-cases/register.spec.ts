@@ -47,7 +47,7 @@ describe('Register Use Case', ()=>{
         })
 
         //resolve / reject
-        expect(()=>
+       await expect(()=>
             registerUseCase.execute({
                 name: "john doe",
                 email,

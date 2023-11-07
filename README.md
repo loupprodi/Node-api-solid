@@ -53,9 +53,12 @@ typescript da biblioteca
 biblioteca de testes junto com a biblioteca para entender os paths criado no tsconfig
 > npm i vitest vite-tsconfig-paths -D
 
+biblioteca para visualização dos teste
+> npm i -D @vitest/ui
+
 ## RFs (Requisitos funcionais)
 
-- [ ] Deve ser possível se cadastrar;
+- [x] Deve ser possível se cadastrar;
 - [ ] Deve ser possível se autenticar;
 - [ ] Deve ser possível obter o perfil de um usuário logado;
 - [ ] Deve ser possível obter o numero de check-ins realizados pelo usuário logado;
