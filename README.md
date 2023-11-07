@@ -71,7 +71,7 @@ biblioteca para visualização dos teste
 
 ## RNs (Regras de negócio)
 
-- [ ] o Usuário não deve poder se cadastrar com e-mail duplicado;
+- [x] o Usuário não deve poder se cadastrar com e-mail duplicado;
 - [ ] o Usuário nao pode fazer 2 check-ins no mesmo dia;
 - [ ] o Usuário nao pode fazer check-in se não estiver perto (100m) da academia;
 - [ ] o Check-in só pode ser validado até 20 minutos após criado;
@@ -80,8 +80,8 @@ biblioteca para visualização dos teste
 
 ## RFs (Requisitos não-funcionais)
 
-- [ ] a senha do usuário precisa estar criptografada;
-- [ ] Os dados da aplicação precisam estar persistido em um banco PostgreSQL;
+- [x] a senha do usuário precisa estar criptografada;
+- [x] Os dados da aplicação precisam estar persistido em um banco PostgreSQL;
 - [ ] Todas as listas de dados precisam estar paginadas com 20 itens por paginas;
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
 
