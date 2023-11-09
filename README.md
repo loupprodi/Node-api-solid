@@ -56,6 +56,8 @@ biblioteca de testes junto com a biblioteca para entender os paths criado no tsc
 biblioteca para visualização dos teste
 > npm i -D @vitest/ui
 
+## TDD -> Test-driven development
+
 ## RFs (Requisitos funcionais)
 
 - [x] Deve ser possível se cadastrar;
@@ -65,7 +67,7 @@ biblioteca para visualização dos teste
 - [ ] Deve ser possível o usuário obter seu histórico de check-ins;
 - [ ] Deve ser possível o usuario buscar academias próxima;
 - [ ] Deve ser possível o usuário buscar academia pelo nome;
-- [ ] Deve ser possível o usuário realizar check-in em uma academia;
+- [x] Deve ser possível o usuário realizar check-in em uma academia;
 - [ ] Deve ser possível validar o check-in de um usuário;
 - [ ] Deve ser possível cadastrar uma academia;
 
