@@ -40,6 +40,10 @@ gera o controle de versão do prisma, roda as migrations produção
 comando para rodar o studio prisma
 > npx prisma studio
 
+install biblioteca de dias do Javascript
+> npm i dayjs
+
+
 ```sh
  docker run --name api-solid-pg -e POSTGRESQL_USERNAME=root -e POSTGRESQL_PASSWORD=root1234 -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
  ```
