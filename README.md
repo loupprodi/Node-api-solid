@@ -74,7 +74,7 @@ biblioteca para visualização dos teste
 ## RNs (Regras de negócio)
 
 - [x] o Usuário não deve poder se cadastrar com e-mail duplicado;
-- [ ] o Usuário nao pode fazer 2 check-ins no mesmo dia;
+- [x] o Usuário nao pode fazer 2 check-ins no mesmo dia;
 - [ ] o Usuário nao pode fazer check-in se não estiver perto (100m) da academia;
 - [ ] o Check-in só pode ser validado até 20 minutos após criado;
 - [ ] o Check-in so pode ser validado por administradores; (autorização)
