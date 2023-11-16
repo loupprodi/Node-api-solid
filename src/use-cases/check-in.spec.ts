@@ -3,6 +3,8 @@ import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-c
 import { CheckInUseCase } from './check-in'
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository'
 import { Decimal } from '@prisma/client/runtime/library'
+import { MaxNumberOfCheckInsError } from './errors/max-number-0f-check-ins-error'
+import { MaxDistanceError } from './errors/max-distance-error'
 
 // const usersRepository = new InMemoryUsersRepository()
 // const registerUseCase = new RegisterUseCase(usersRepository)
@@ -11,19 +13,18 @@ let gymsRepository: InMemoryGymsRepository
 let sut: CheckInUseCase
 
 describe('Check-in Use Case', () => {
-  beforeEach(() => {
+  beforeEach(async() => {
     checkInsRepository = new InMemoryCheckInsRepository()
     gymsRepository = new InMemoryGymsRepository()
     sut = new CheckInUseCase(checkInsRepository, gymsRepository)
 
-     gymsRepository.items.push({
+    await gymsRepository.create({
       id:'gym-01',
       title:'Javascript Gym',
       description: '',
       phone:'',
       latitude: new Decimal(-23.5131824),
       longitude: new Decimal(-47.458847),
-
     })
 
     vi.useFakeTimers()
@@ -59,7 +60,7 @@ describe('Check-in Use Case', () => {
       userId:'user-01',
       userlatitude: -23.5131824,
       userlongitude: -47.458847,
-    })).rejects.toBeInstanceOf(Error)
+    })).rejects.toBeInstanceOf(MaxNumberOfCheckInsError)
   })
 
   it('should be able to check in twice but in different days', async () => {
@@ -86,7 +87,7 @@ describe('Check-in Use Case', () => {
   })
 
 
-  it('should not be able to check in on distant gynm', async () => {
+  it('should not be able to check in on distant gym', async () => {
     gymsRepository.items.push({
       id:'gym-02',
       title:'Javascript Gym',
@@ -102,7 +103,7 @@ describe('Check-in Use Case', () => {
         userId:'user-02',
         userlatitude: -24.5131824,
         userlongitude: -48.458847,
-      })).toEqual(expect.any(String))
+      })).rejects.toBeInstanceOf(MaxDistanceError)
   })
 
 })
